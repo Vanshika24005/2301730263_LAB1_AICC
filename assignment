@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Lab Assignment 01: AI-driven threat detection prototype"
+git branch -M main
+git remote add origin https://github.com/<your-username>/ai-cybersecurity-unit1-mini-project-vanshika.git
+git push -u origin main
