@@ -1,0 +1,186 @@
+{
+  "fairness_by_threshold": {
+    "thr_0.2": {
+      "All": {
+        "fpr_pct": 1.6821602478973,
+        "legit_blocked": 38,
+        "legit_total": 2259,
+        "recall_pct": 92.5311203319502,
+        "precision_pct": 85.44061302681992
+      },
+      "Region A": {
+        "fpr_pct": 0.6582278481012658,
+        "legit_blocked": 13,
+        "legit_total": 1975,
+        "recall_pct": 92.27272727272727,
+        "precision_pct": 93.98148148148148
+      },
+      "Region B": {
+        "fpr_pct": 8.80281690140845,
+        "legit_blocked": 25,
+        "legit_total": 284,
+        "recall_pct": 95.23809523809523,
+        "precision_pct": 44.44444444444444
+      }
+    },
+    "thr_0.5": {
+      "All": {
+        "fpr_pct": 0.22133687472332889,
+        "legit_blocked": 5,
+        "legit_total": 2259,
+        "recall_pct": 86.72199170124482,
+        "precision_pct": 97.66355140186917
+      },
+      "Region A": {
+        "fpr_pct": 0.05063291139240507,
+        "legit_blocked": 1,
+        "legit_total": 1975,
+        "recall_pct": 86.81818181818181,
+        "precision_pct": 99.47916666666666
+      },
+      "Region B": {
+        "fpr_pct": 1.4084507042253522,
+        "legit_blocked": 4,
+        "legit_total": 284,
+        "recall_pct": 85.71428571428571,
+        "precision_pct": 81.81818181818183
+      }
+    },
+    "thr_0.8": {
+      "All": {
+        "fpr_pct": 0.08853474988933156,
+        "legit_blocked": 2,
+        "legit_total": 2259,
+        "recall_pct": 82.57261410788381,
+        "precision_pct": 99.00497512437812
+      },
+      "Region A": {
+        "fpr_pct": 0.05063291139240507,
+        "legit_blocked": 1,
+        "legit_total": 1975,
+        "recall_pct": 82.72727272727273,
+        "precision_pct": 99.4535519125683
+      },
+      "Region B": {
+        "fpr_pct": 0.35211267605633806,
+        "legit_blocked": 1,
+        "legit_total": 284,
+        "recall_pct": 80.95238095238095,
+        "precision_pct": 94.44444444444444
+      }
+    }
+  },
+  "biased_training": {
+    "All": {
+      "fpr_pct": 1.6821602478973,
+      "legit_blocked": 38,
+      "legit_total": 2259,
+      "recall_pct": 90.87136929460581,
+      "precision_pct": 85.21400778210116
+    },
+    "Region A": {
+      "fpr_pct": 0.1518987341772152,
+      "legit_blocked": 3,
+      "legit_total": 1975,
+      "recall_pct": 90.9090909090909,
+      "precision_pct": 98.52216748768473
+    },
+    "Region B": {
+      "fpr_pct": 12.323943661971832,
+      "legit_blocked": 35,
+      "legit_total": 284,
+      "recall_pct": 90.47619047619048,
+      "precision_pct": 35.18518518518518
+    }
+  },
+  "balanced_class_weight": {
+    "All": {
+      "fpr_pct": 3.3200531208499333,
+      "legit_blocked": 75,
+      "legit_total": 2259,
+      "recall_pct": 96.2655601659751,
+      "precision_pct": 75.57003257328991
+    },
+    "Region A": {
+      "fpr_pct": 1.6708860759493671,
+      "legit_blocked": 33,
+      "legit_total": 1975,
+      "recall_pct": 96.36363636363636,
+      "precision_pct": 86.53061224489797
+    },
+    "Region B": {
+      "fpr_pct": 14.788732394366196,
+      "legit_blocked": 42,
+      "legit_total": 284,
+      "recall_pct": 95.23809523809523,
+      "precision_pct": 32.25806451612903
+    }
+  },
+  "proxy_features_removed": {
+    "All": {
+      "fpr_pct": 0.3098716246126605,
+      "legit_blocked": 7,
+      "legit_total": 2259,
+      "recall_pct": 87.55186721991701,
+      "precision_pct": 96.78899082568807
+    },
+    "Region A": {
+      "fpr_pct": 0.3037974683544304,
+      "legit_blocked": 6,
+      "legit_total": 1975,
+      "recall_pct": 87.27272727272727,
+      "precision_pct": 96.96969696969697
+    },
+    "Region B": {
+      "fpr_pct": 0.35211267605633806,
+      "legit_blocked": 1,
+      "legit_total": 284,
+      "recall_pct": 90.47619047619048,
+      "precision_pct": 95.0
+    }
+  },
+  "mlp_permutation_importance": [
+    [
+      "requests_per_min",
+      0.07820292589158376
+    ],
+    [
+      "ip_reputation_score",
+      0.07817513944500534
+    ],
+    [
+      "failed_attempts",
+      0.06417196739316969
+    ],
+    [
+      "device_type",
+      0.031702782112665084
+    ],
+    [
+      "auth_method",
+      0.016977967583254937
+    ],
+    [
+      "session_duration_s",
+      0.0169391838577466
+    ],
+    [
+      "uses_vpn",
+      0.008041326290916606
+    ],
+    [
+      "bytes_transferred_kb",
+      0.007607282459632292
+    ],
+    [
+      "hour_of_day",
+      0.006362160756623036
+    ],
+    [
+      "country",
+      0.000499746198376183
+    ]
+  ],
+  "region_B_share_of_train_pct": 11.493333333333332,
+  "region_B_share_of_biased_train_pct": 1.1761202917969331
+}

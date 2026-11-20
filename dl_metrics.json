@@ -1,0 +1,28 @@
+{
+  "Logistic Regression": {
+    "accuracy": 0.9852,
+    "precision": 0.9766355140186916,
+    "recall": 0.8672199170124482,
+    "f1": 0.9186813186813186,
+    "train_time_s": 0.028242819999999114,
+    "predict_time_ms_per_1000": 2.455036799999988
+  },
+  "Decision Tree": {
+    "accuracy": 0.9788,
+    "precision": 0.9433962264150944,
+    "recall": 0.8298755186721992,
+    "f1": 0.8830022075055187,
+    "train_time_s": 0.030359862999999265,
+    "predict_time_ms_per_1000": 2.3578172000000563
+  },
+  "Neural Net (MLP 64-32)": {
+    "accuracy": 0.9844,
+    "precision": 0.9675925925925926,
+    "recall": 0.8672199170124482,
+    "f1": 0.9146608315098468,
+    "train_time_s": 0.29655602900000133,
+    "predict_time_ms_per_1000": 2.8712059999996598
+  },
+  "mlp_epochs_run": 15,
+  "mlp_parameters": 3329
+}

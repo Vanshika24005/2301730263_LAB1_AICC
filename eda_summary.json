@@ -1,0 +1,53 @@
+{
+  "rows": 10000,
+  "suspicious_share_pct": 9.64,
+  "missing_values": {
+    "ip_reputation_score": 293,
+    "session_duration_s": 296,
+    "device_type": 313
+  },
+  "indicators": [
+    {
+      "feature": "hour_of_day",
+      "Normal": 11.08,
+      "Suspicious": 8.26,
+      "corr_with_label": -0.19
+    },
+    {
+      "feature": "failed_attempts",
+      "Normal": 0.41,
+      "Suspicious": 3.61,
+      "corr_with_label": 0.7
+    },
+    {
+      "feature": "ip_reputation_score",
+      "Normal": 16.78,
+      "Suspicious": 55.08,
+      "corr_with_label": 0.67
+    },
+    {
+      "feature": "requests_per_min",
+      "Normal": 12.47,
+      "Suspicious": 51.8,
+      "corr_with_label": 0.68
+    },
+    {
+      "feature": "session_duration_s",
+      "Normal": 606.05,
+      "Suspicious": 199.34,
+      "corr_with_label": -0.44
+    },
+    {
+      "feature": "bytes_transferred_kb",
+      "Normal": 903.51,
+      "Suspicious": 5103.37,
+      "corr_with_label": 0.44
+    },
+    {
+      "feature": "uses_vpn",
+      "Normal": 0.08,
+      "Suspicious": 0.5,
+      "corr_with_label": 0.37
+    }
+  ]
+}
